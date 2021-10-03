@@ -16,6 +16,7 @@ After some research, I noticed that this problem is faced by many people. But al
 6. Infrared Sensor
 7. Hot glue gun for hacking things together
 8. Cardboard box
+9. 0.96 inch i2c display
 
 ![WhatsApp Image 2021-10-03 at 5 10 40 PM](https://user-images.githubusercontent.com/75200693/135752211-f669fb75-571c-408b-a687-339e722f8b2d.jpeg)
 
@@ -50,6 +51,14 @@ There was an issue with printing comments onto the display. Make sure after ever
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/75200693/135755322-77c52c74-eff3-4127-85a6-421892dc44e6.gif)
 
+## Circuit Design:
+The project was done on a breadboard for simplicity. The connections are as follows:
+
+1. *IR Sensor:* Output to pin D8, VCC and ground to 5 volt and GND pins respectively.
+
+2. *Servo motor*: Data pin to D9, VCC and ground to 5 volt and GND pins respectively.
+
+3. *0.96 inch i2c display:* VCC and GND to 5 volt and ground pins respectively. **SDA--->A4 and SCL--->A5**
 
 ## Future Scope and improvements:
 This project can be extended to take in multiple tablets and make the plastic tube longer so that it will be easier to put the tablets from the top.

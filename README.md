@@ -15,7 +15,7 @@ After some research, I noticed that this problem is faced by many people. But al
 5. Long plastic tube and/or a funnel to hold the tube
 6. Infrared Sensor
 7. Hot glue gun for hacking things together
-8. Cardboard box
+8. Cardboard box and **foam board**
 9. 0.96 inch i2c display
 
 ![WhatsApp Image 2021-10-03 at 5 10 40 PM](https://user-images.githubusercontent.com/75200693/135752211-f669fb75-571c-408b-a687-339e722f8b2d.jpeg)
@@ -33,26 +33,27 @@ The main problems faced while making the build was:
 
 3. Getting the code right for the display
 
-The first problem was fixed by using a material known as foam board since the movement of cardboard was not smooth enough and it is easier to cut than cardboard.
-The trajectory that the funnel would take with respect to the servo motor was calculated by trial and error. As the saying goes 
+The first problem was fixed by using a material known as foam board for the mechanical part of the build since the movement of cardboard was not smooth enough the tablet was not coming out of the funnel and into the cup smoothly. Also it is easier to cut than cardboard.
+
+second, The trajectory that the funnel would take with respect to the servo motor was a difficult to find out. I did it by trial and error. As the saying goes 
 
 > test fast, fail fast and adjust fast.
 
 > Fail faster succeed sooner.
 
-There was an issue with printing comments onto the display. Make sure after every comment there should be an "oled.display();" command or else the comments will not come on the display. Also, download the correct library for your display. I had downloaded the Adafruit_SSD1306 library.
+Third,There was an issue with printing comments onto the display. Make sure after every comment there should be an "oled.display();" command or else the comments will not come on the display. Also, download the correct library for your display. I had downloaded the Adafruit_SSD1306 library.
 
 
 
 ![pic1](https://user-images.githubusercontent.com/75200693/135752148-e090f6f0-3fda-48c8-a70f-c4aa8b0bdbab.jpeg)
 
 
-![Capture](https://user-images.githubusercontent.com/75200693/135750978-80a4ad36-2a25-4de7-8492-4ca29de9a5aa.PNG)
-
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/75200693/135755322-77c52c74-eff3-4127-85a6-421892dc44e6.gif)
 
+![Capture](https://user-images.githubusercontent.com/75200693/135750978-80a4ad36-2a25-4de7-8492-4ca29de9a5aa.PNG)
+
 ## Circuit Design:
-The project was done on a breadboard for simplicity. The connections are as follows:
+The project was done on a breadboard for simplicity. The connections are as follows for Arduino Nano:
 
 1. *IR Sensor:* Output to pin D8, VCC and ground to 5 volt and GND pins respectively.
 
@@ -60,13 +61,18 @@ The project was done on a breadboard for simplicity. The connections are as foll
 
 3. *0.96 inch i2c display:* VCC and GND to 5 volt and ground pins respectively. **SDA--->A4 and SCL--->A5**
 
+![WhatsApp Image 2021-10-01 at 11 27 49 AM](https://user-images.githubusercontent.com/75200693/136192545-afbe4a29-18cd-4e00-b8b6-1379c316a627.jpeg)
+
+![WhatsApp Image 2021-10-01 at 11 25 35 AM](https://user-images.githubusercontent.com/75200693/136192720-87b711e7-7dcb-4569-ba1b-d10a616bb07a.jpeg)
+
+![WhatsApp Image 2021-10-01 at 11 25 47 AM](https://user-images.githubusercontent.com/75200693/136192746-ef2d0f37-adce-4e92-8aab-63f13c87bfe7.jpeg)
+
+
 ## Future Scope and improvements:
 This project can be extended to take in multiple tablets and make the plastic tube longer so that it will be easier to put the tablets from the top.
-We can also add a timer to make an alarm at a particular time so that the patient does not forget to take his/her tablets or medication.
+We can also add a timer to set an alarm at a particular time so that the patient does not forget to take his/her tablets or medication.
 The system should be modified to accept different sizes of tablets.
 
 ## Please watch the video to understand the build and its working completely
 
-
-
-
+https://youtu.be/ZzsbktEgxVU

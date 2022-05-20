@@ -1,11 +1,4 @@
-/* Sweep
- by BARRAGAN <http://barraganstudio.com>
- This example code is in the public domain.
 
- modified 8 Nov 2013
- by Scott Fitzgerald
- https://www.arduino.cc/en/Tutorial/LibraryExamples/Sweep
-*/
 #include <Wire.h>  //  Include I2C library
 #include<Adafruit_GFX.h>   //  include Graphical Library
 #include<Adafruit_SSD1306.h>  // Oled library
